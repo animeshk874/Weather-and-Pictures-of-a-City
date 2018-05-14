@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- INCLUDING BEN ALMAN's TINY PUB-SUB IMPLEMENTATION-->
+    <script src="../resources/jquery-tiny-pubsub/dist/ba-tiny-pubsub.min.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+            <form id="form">
+                <div class="fields-wrapper">
+                    <select id="city-dropdown">
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Cape Town">Cape Town</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="London">London</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="New York">New York</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Zurich">Zurich</option>
+                    </select>
+                    <button id="submit">Submit</button>
+                    <div>
+                        Images powered by <a href="https://pixabay.com/">Pixabay</a>.
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="weather-container" class="weather-container">
+            <div class="weather-background">
+                <div class="bg-1">
+                    <img src="./img/polygon-bg.png" alt="polygon">
+                </div>
+                <div class="bg-2">
+                    <img src="./img/circles-bokeh.png" alt="bokeh">
+                </div>
+            </div>
+            <div class="city-name-and-weather-icon-container">
+                <div class="city-and-temp-container">
+                    <div id="city-name" class="city-name"></div>
+                    <div class="temp-and-weather-container">
+                        <div id="temperature"></div>
+                        <div id="weather-type"></div>
+                    </div>
+                </div>
+                <div class="weather-icon-container">
+                    <i id="weather-icon" class="wi wi-rain"></i>
+                </div>
+            </div>
+            <div class="weather-details-container">
+                <div class="max-min-temp-container">
+                    <div class="max-temp">
+                        <div class="icon-small">
+                            <img src="./img/temp-max.png">
+                        </div>
+                        <div class="temperature-value">
+                        </div>
+                    </div>
+                    <div class="min-temp">
+                        <div class="icon-small">
+                            <img src="./img/temp-min.png">
+                        </div>
+                        <div class="temperature-value">
+                        </div>
+                    </div>
+                </div>
+                <div class="wind-speed-container">
+                    <div class="icon-big">
+                        <img src="./img/breeze.png" alt="Breeze icon">
+                    </div>
+                    <div class="text">
+                        <span id="wind-speed"></span>
+                    </div>
+                </div>
+                <div class="humidity-container">
+                    <div class="icon-big">
+                        <img src="./img/raindrop-close-up.png" alt="Breeze icon">
+                    </div>
+                    <div class="text">
+                        <span id="wind-speed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loader">
+            
+        </div>
+
+        <div class="img-gallery grid" id="img-gallery">
+        </div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
