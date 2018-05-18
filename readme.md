@@ -12,5 +12,5 @@ This app is based on the **publish/subscribe** design pattern. It uses [Ben Alma
 
 [Pixabay API](https://pixabay.com/api/docs/)
 
-[Open Weather API(Current Weather](https://openweathermap.org/api)
+[Open Weather API(Current Weather)](https://openweathermap.org/api)
 
