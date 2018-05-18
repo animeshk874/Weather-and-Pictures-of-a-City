@@ -5,5 +5,6 @@ Tells the current weather and shows some of the pictures that were recently take
 
 # APIs used
 
-(Pixabay API)[https://pixabay.com/api/docs/]
-(Open Weather API(Current Weather))[https://openweathermap.org/api]
+[Pixabay API](https://pixabay.com/api/docs/)
+
+[Open Weather API(Current Weather](https://openweathermap.org/api)
