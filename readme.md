@@ -1,8 +1,6 @@
 # Weather-and-Pictures-of-a-City
 Tells the current weather and shows some of the pictures that were recently taken in a city.
 
-**Demo** [View it on surge.sh](http://awesome-weather.surge.sh/)
-
 **Here's a screenshot of the app.**
 ![Screenshot](https://raw.githubusercontent.com/animeshk874/Weather-and-Pictures-of-a-City/master/screens/mac-new.png)
 
